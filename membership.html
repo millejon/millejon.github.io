@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Empire Records</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    </head>
+    <body>
+        <section id="clubGrid">
+            <section id="headerLeft">
+                <img id="logo" src="images/empire_records_logo.png" alt="Logo" width="800" height="120">
+                Source: FanartTV.com page
+            </section>
+            <section id="headerRight">
+                    293 E Broadway, New York, NY 10002<br>
+                    (212) 555-6427<br>
+                    <br>
+                    <span id="todaysDate"></span>
+            </section>
+            <nav id="navBar">
+                <hr>
+            </nav>
+            <section id="clubHeader">
+                <h1 class="heading">Welcome To The Platinum Club!</h1>
+                <img id="memberImage" src="images/record_store_3.jpg" alt="Record Store" width="750" height="420"><br>
+                Source: TheVinylFactory.com article
+            </section>
+            <section id="membership">
+                <p>
+                    Are you a hip hop junkie? Do you need a monthly fix? Then 
+                    you have come to the right place. At the low monthly rate 
+                    of $4.99, you will become an elite member of the Empire 
+                    Records Platinum Club.
+                </p>
+                <p>
+                    What does that $4.99 get you? You will get a subscription 
+                    to our monthly newsletter that not only has album reviews 
+                    and recommendations but also first notice of upcoming 
+                    in-store promotions and releases. Check out a sample page 
+                    of last month's newsletter: 
+                    <a href="newsletter.pdf" download="newsletter.pdf"><button type="button">Download Sample Newsletter!</button></a>
+                </p>
+                <p>
+                    Platinum Club members get first opportunity to pre-order 
+                    new albums. All in-store appearances and signings will have 
+                    an hour exclusive to Platinum members. Exclusive coupons 
+                    and offers will also be sent out periodically. If you are 
+                    interested, submit the form below and we will contact you 
+                    with more information!
+                </p>
+                <p>
+                <form id="membershipForm">
+                    <fieldset>
+                        <legend>Sign up for the Platinum Club!</legend>
+                        <label>Name: 
+                            <input type="text" id="name" name="name" size="30" maxlength="100">
+                        </label>
+                        <br>
+                        <label>E-mail: 
+                            <input type="email" id="email" name="email" size="30" maxlength="100">
+                        </label>
+                        <br>
+                        <label>Birthday: 
+                            <input type="date" id="birthday" name="birthday">
+                        </label>
+                        <br>
+                        <label>Street Address: 
+                            <input type="text" id="streetAddress" name="streetAddress" size="30" maxlength="100">
+                        </label>
+                        <br>
+                        <label>City: 
+                            <input type="text" id="city" name="city" size="20" maxlength="100">
+                        </label>
+                        <label>State: 
+                            <input type="text" id="state" name="state" size="2" maxlength="2">
+                        </label>
+                        <label>Zip Code: 
+                            <input type="number" id="zipCode" name="zipCode" min="10000" max="99999">
+                        </label>
+                        <br>
+                        <input id="submit" type="submit" value="Sign up!">
+                    </fieldset>
+                </form>
+                </p>
+                <p>
+                    <span id="welcomeMessage"></span>
+                </p>
+            </section>
+            <section id="memberCopyright">
+                <hr>
+                &copy; 1995 Empire Records
+            </section>
+            <nav id="memberNavFooter">
+                <hr>
+                <a href="index.html">Home</a> - 
+                <a href="albums.html">Featured Albums</a> - 
+                <a href="membership.html">Platinum Club</a> - 
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Empire Records</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    </head>
+    <body>
+        <section id="mainGrid">
+            <section id="headerLeft">
+                <img id="logo" src="images/empire_records_logo.png" alt="Logo" width="800" height="120">
+                Source: FanartTV.com page
+            </section>
+            <section id="headerRight">
+                    293 E Broadway, New York, NY 10002<br>
+                    (212) 555-6427<br>
+                    <br>
+                    <span id="todaysDate"></span>
+            </section>
+            <nav id="slideshow">
+                <hr>
+                <div class="slideshow">
+                    <a href="index.html"><img src="images/record_store_1.jpg" width="1600" height="300"></a>
+                    <div class="source">Source: VinylChapters.com article</div>
+                    <div class="caption">Home Page</div>
+                </div>
+                <div class="slideshow">
+                    <a href="albums.html"><img src="images/slideshow.jpg" width="1600" height="300"></a>
+                    <div class="source">Source: Amazon.com listing</div>
+                    <div class="caption">Featured Albums</div>
+                </div>
+                <div class="slideshow">
+                    <a href="membership.html"><img src="images/record_store_2.png" width="1600" height="300"></a>
+                    <div class="source">Source: TheVinylFactory.com article</div>
+                    <div class="caption">Platinum Club</div>
+                </div>
+                <div class="slideshow">
+                    <a href="contact.html"><img src="images/record_store_3.jpg" width="1600" height="300"></a>
+                    <div class="source">Source: Pinterest.com article</div>
+                    <div class="caption">Contact Us</div>
+                </div>
+                <a id="previousSlide" onclick="changeSlides(-1)">&#8592;</a>
+                <a id="nextSlide" onclick="changeSlides(1)">&#8594;</a>
+                <br>
+                <div id="slideSelectors">
+                    <span class="slideSelector" onclick="chooseSlide(1)"></span>
+                    <span class="slideSelector" onclick="chooseSlide(2)"></span>
+                    <span class="slideSelector" onclick="chooseSlide(3)"></span>
+                    <span class="slideSelector" onclick="chooseSlide(4)"></span>
+                </div>
+            </nav>
+            <section id="mainIntro">
+                <h1 class="heading">New York City's Premier Record Store</h1>
+                <img id="introImage" src="images/record_store_1.jpg" alt="Record Store" width="750" height="420"><br>
+                Source: VinylChapters.com article
+            </section>
+            <section id="intro">
+                <p>
+                    Welcome to Empire Records, the most thoroughly stocked 
+                    record store in the entire city! We specialize in hip hop 
+                    albums but we also carry other genres as well. We buy and 
+                    sell records so if you have some albums that you are interested 
+                    in selling, bring them in and we can take a look. Browse our 
+                    website but the real magic is inside our store so we invite
+                    you to come on down!
+                </p>
+                <p>
+                    Have you heard about our membership program? Click on the link 
+                    above to learn more and sign up to be the first one to know 
+                    about upcoming in-store promotions, get first dibs on all new 
+                    releases, and much more!
+                </p>
+            </section>
+            <section id="scrollbox">
+                <h2 class="heading">Past Releases and Promotions</h2>
+                <ul id="scrollboxList">
+                    <li>May 23: Beastie Boys - Root Down EP</li>
+                    <li>May 15: Buy 2, Get 1 Free Sale</li>
+                    <li>May 2: Masta Ace Incorporated - Sittin' On Chrome</li>
+                    <li>May 1: Smif-N-Wessun Meet and Greet</li>
+                    <li>April 25: Mobb Deep - The Infamous</li>
+                    <li>April 18: Lordz of Brooklyn - All In The Family</li>
+                    <li>April 4: Inspectah Deck Meet and Greet</li>
+                    <li>March 28: Ol' Dirty Bastard - Return To The 36 Chambers</li>
+                    <li>March 28: Big L - Lifestylez Ov Da Poor & Dangerous</li>
+                    <li>March 18: Platinum Club Member Exclusive Sale</li>
+                    <li>March 14: 2Pac - Me Against The World</li>
+                    <li>March 5: Big L In-Store Performance</li>
+                    <li>February 28: Tha Alkaholiks - Coast II Coast</li>
+                    <li>February 21: DJ Quik - Safe + Sound</li>
+                    <li>February 20: Raekwon In-Store Performance</li>
+                    <li>February 14: Valentine's Day Sale</li>
+                    <li>January 24: Too Short - Cocktails</li>
+                    <li>January 17: The Roots - Do You Want More?!!!??!</li>
+                    <li>January 10: Smif-N-Wessun - Dah Shinin</li>
+                    <li>January 1: New Year's Day</li>
+                </ul>
+            </section>
+            <section id="copyright">
+                <hr>
+                &copy; 1995 Empire Records
+            </section>
+            <nav id="navFooter">
+                <hr>
+                <a href="index.html">Home</a> - 
+                <a href="albums.html">Featured Albums</a> - 
+                <a href="membership.html">Platinum Club</a> - 
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </section>
+        <script src="script.js"></script>
+        <script src="slide_script.js"></script>
+    </body>
+</html>
